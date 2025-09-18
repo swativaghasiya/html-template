@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Home · NSBLPA</title>
+  <meta name="description" content="NSBLPA — A modern sports business league. Mobile-first redesign prototype." />
+  <link rel="preconnect" href="." />
+  <link rel="icon" href="assets/logo.png" type="image" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Top strip -->
+<div class="topstrip" role="region" aria-label="Live banner">
+  <div class="container topstrip-inner">
+    <div class="ts-left">
+      <span class="ts-badge">LIVE</span>
+      <a class="ts-link" href="apps.html#live">Watch live match here</a>
+    </div>
+    <div class="ts-right">
+      <span class="ts-label"><a href="https://financevideosmedia.com/watch/talk-to-500-people-in-one-day-sales-bets-challenge_U1CFPwi1JfYyTtZ.html">WATCH HIGHLIGHTS NSBLPA</a></span>
+    </div>
+  </div>
+</div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="NSBLPA Home">
+        <img src="assets/logo.png" alt="NSBLPA logo" width="60" height="60" />
+        <span class="brand-text">NSBLPA</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+        <span class="menu-icon" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ownership.html">Ownership</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<div id="nav-backdrop" class="nav-backdrop" hidden></div>
+<main id="main" tabindex="-1">
+  <!-- Billboard -->
+  <section class="billboard">
+  <div class="container rail">
+    <!-- LEFT: Sales Season block (50%) -->
+    <div class="billboard-media">
+      <div class="billboard-copy">
+        <p class="eyebrow">National Sales Bet League Professional Association</p>
+        <h1>Sales Season Is Back!</h1>
+        <p class="lede">Highlights, scores, teams, and apps — all in one league experience.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="apps.html">Get the Apps</a>
+          <a class="btn btn-outline" href="teams.html">Explore Teams</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- RIGHT: Next Match (replaces Sales Bets League) -->
+    <aside class="billboard-nextmatch">
+      <div class="card nextmatch">
+        <div class="nm-head" aria-label="Next Match">
+          <span class="nm-dash big" aria-hidden="true"></span>
+          <span class="nm-dash small" aria-hidden="true"></span>
+          <h3>Next Match</h3>
+        </div>
+
+        <div class="nm-inner" role="group" aria-labelledby="nmVenue">
+          <!-- Home team -->
+          <div class="nm-team">
+            <img class="avatar" src="assets/home/news1.jpg" alt="Miami Revenue Runners" />
+            <div class="team-name">
+              <span>Miami</span>
+              <span>Revenue</span>
+              <span>Runners</span>
+            </div>
+          </div>
+
+          <!-- Center: date + venue -->
+          <div class="nm-center">
+            <div class="date-pill" aria-label="Match date">March 26th, 2025</div>
+            <div class="venue" id="nmVenue">Brickell, Miami</div>
+          </div>
+
+          <!-- Away / venue label (as in your screenshot “Field”) -->
+          <div class="nm-team">
+            <img class="avatar" src="assets/home/news2.jpg" alt="Opponent / Venue" />
+            <div class="team-name"><span>Field</span></div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+
+  <!-- Subnav (quick actions) -->
+  <!-- <nav class="subnav" aria-label="Quick actions">
+    <div class="container">
+      <ul class="subnav-list">
+        <li><a href="apps.html">Watch</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="ownership.html">Ownership</a></li>
+        <li><a href="apps.html#league">League Apps</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+  <!-- Rail layout -->
+  <section class="content-rail">
+    <div class="container rail">
+      <!-- Main column -->
+      <div class="rail-main">
+        <!-- <h2 class="rail-title">What’s Popular</h2> -->
+        <div class="cards-grid popular-grid">
+          <a class="card media-card" href="#">
+            <div class="media ph news1"></div>
+            <div class="pad">
+              <!-- <p class="kicker">NEWS</p> -->
+              <h3>Miami Revenue Runners take the lead in a fierce showdown</h3>
+            </div>
+          </a>
+          <a class="card media-card" href="#">
+            <div class="media ph news2"></div>
+            <div class="pad">
+              <!-- <p class="kicker">NEWS</p> -->
+              <h3>New York Profit Pursuers set the pace with record wins</h3>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+      </div>
+
+      <!-- Side rail -->
+ <aside class="billboard-leaderboard">
+      <div class="card leaderboard compact">
+        <div class="lb-head"><span>Sales Bets League</span></div>
+
+        <!-- Viewport with auto slider if items overflow -->
+        <div class="lb-viewport">
+          <div class="ticker-track" id="lbTrack">
+            <ol class="lb" id="lbList">
+              <li><span class="club">Miami Revenue Runners</span><span class="pts">30</span></li>
+              <li><span class="club">New York Profit Pursuers</span><span class="pts">27</span></li>
+              <li><span class="club">Texas Deal Makers</span><span class="pts">21</span></li>
+              <li><span class="club">Chicago Sales Sharks</span><span class="pts">18</span></li>
+              <li><span class="club">Atlanta Revenue Rockstars</span><span class="pts">14</span></li>
+              <li><span class="club">Denver Deal Dynamos</span><span class="pts">12</span></li>
+              <li><span class="club">DC Sales Eagles</span><span class="pts">11</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    </div>
+  </section>
+
+  <!-- Apps on Home -->
+<section class="home-apps" id="apps-home">
+
+  <div class="container">
+      <h2 class="rail-title">Teams</h2>
+
+        <!-- One-line ticker -->
+        <div class="teams-ticker">
+          <div class="tt-track" id="teamsTrack">
+            <!-- original items (keep adding as many as you want) -->
+            <a class="match tt-item" href="https://newyorkprofitpursuers.com">
+              <div class="team">
+                <img src="assets/team-logos/ny.png" alt="New York logo" />
+                <span class="abbr">NY</span>
+              </div>
+            </a>
+             <a class="match tt-item" href="https://miamirevenuerunners.com">
+              <div class="team">
+                <img src="assets/team-logos/mia.png" alt="Miami logo" />
+                <span class="abbr">MIA</span>
+              </div>
+            </a>
+            <a class="match tt-item" href="https://atlantarevenuerockstars.com">
+              <div class="team">
+                <img src="assets/team-logos/atl.png" alt="Atlanta logo" />
+                <span class="abbr">ATL</span>
+              </div>
+            </a>
+
+              <a class="match tt-item" href="https://chicagosalessharks.com">
+
+              <div class="team">
+                <img src="assets/team-logos/chi.png" alt="Chicago logo" />
+                <span class="abbr">CHI</span>
+              </div>
+            </a>
+
+            <a class="match tt-item" href="https://texasdealmakersteam.com">
+              <div class="team">
+                <img src="assets/team-logos/tx.png" alt="Texas logo" />
+                <span class="abbr">TX</span>
+              </div>
+
+            </a>
+              <a class="match tt-item" href="https://dcsaleseagles.com">
+
+
+              <div class="team">
+                <img src="assets/team-logos/dc.png" alt="DC logo" />
+                <span class="abbr">DC</span>
+              </div>
+            </a>
+             <a class="match tt-item" href="https://denverdealdynamos.com">
+
+
+              <div class="team">
+                <img src="assets/team-logos/den.png" alt="DC logo" />
+                <span class="abbr">DEN</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+       <div class="container">
+        <div class="section-head" style="display:flex;align-items:end;justify-content:space-between;gap:1rem;">
+          <div>
+            <h2 class="rail-title">Apps</h2>
+            <p>Download official apps for teams, fans, league, owners, and players.</p>
+          </div>
+          <a class="btn btn-outline" href="apps.html">View all apps</a>
+        </div>
+
+    <div class="app-groups home-app-groups">
+      <!-- Main / Team Apps -->
+      <div class="app-group card soft">
+        <h3>Main / Team Apps</h3>
+        <ul class="app-list">
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.salesbet.influencers">SalesBet Influencers</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.newyork">NSBLPA New York</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.miami">NSBLPA Miami</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.texas">NSBLPA Texas</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.atlanta">NSBLPA Atlanta</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.chicago">NSBLPA Chicago</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.dc">NSBLPA DC</a></li>
+        </ul>
+      </div>
+
+      <!-- Fan Apps -->
+      <div class="app-group card soft">
+        <h3>Fan Apps</h3>
+        <ul class="app-list">
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.fan.texas">Fan — Texas</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.fan.atlanta">Fan — Atlanta</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.fan.chicago">Fan — Chicago</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nblpa.fan.miami">Fan — Miami</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.fan.newyork">Fan — New York</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.fan.dc">Fan — DC</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.fan.denvers">Fan — Denver</a></li>
+        </ul>
+      </div>
+
+      <!-- League / Ownership / Players / Network -->
+      <div class="app-group card soft">
+        <h3>League / Ownership / Players / Network</h3>
+        <ul class="app-list">
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.team_owners">Team Owners</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.fvn.network">FVN Network</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.nsblpa.playersapp">Players App</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.fvn.livesports">FVN Live Sports</a></li>
+          <li><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.salesbet.advertisers">SalesBet Advertisers</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="NSBLPA logo small" width="28" height="28" />
+        <span>NSBLPA</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="ownership.html">Ownership</a>
+        <a href="teams.html">Teams</a>
+        <a href="apps.html">Apps</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© 2025 NSBLPA. Prototype for interview evaluation.</p>
+    </div>
+  </footer>
+  <script src="assets/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="800" viewBox="0 0 1920 800">
+  <defs>
+    <!-- Base sky gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f9ff"></stop>
+      <stop offset="60%" stop-color="#ffffff"></stop>
+    </linearGradient>
+
+    <!-- Blue sweep -->
+    <linearGradient id="blueSweep" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a66ff" stop-opacity="0.18"></stop>
+      <stop offset="100%" stop-color="#5aa3ff" stop-opacity="0.0"></stop>
+    </linearGradient>
+
+    <!-- Green sweep -->
+    <linearGradient id="greenSweep" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#24a148" stop-opacity="0.12"></stop>
+      <stop offset="100%" stop-color="#24a148" stop-opacity="0.0"></stop>
+    </linearGradient>
+
+    <!-- Soft spotlight -->
+    <radialGradient id="glow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"></stop>
+      <stop offset="60%" stop-color="#cfe4ff" stop-opacity="0.35"></stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+    </radialGradient>
+
+    <!-- Diagonal line pattern -->
+    <pattern id="diag" patternUnits="userSpaceOnUse" width="32" height="32" patternTransform="skewX(-20)">
+      <path d="M0 31 L32 31" stroke="#0a66ff" stroke-opacity=".06" stroke-width="2"></path>
+    </pattern>
+
+    <!-- Subtle grid pattern -->
+    <pattern id="grid" patternUnits="userSpaceOnUse" width="64" height="64">
+      <path d="M64 0 H0 V64" fill="none" stroke="#0a66ff" stroke-opacity=".04" stroke-width="1"></path>
+    </pattern>
+
+    <!-- Big soft vignette -->
+    <radialGradient id="vignette" cx="70%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#000" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#000" stop-opacity=".06"></stop>
+    </radialGradient>
+
+    <!-- Semi-transparent white for shine -->
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".0"></stop>
+      <stop offset="30%" stop-color="#ffffff" stop-opacity=".5"></stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Base -->
+  <rect width="100%" height="100%" fill="url(#bg)"></rect>
+
+  <!-- Decorative sweeps -->
+  <g transform="rotate(-6 960 400)">
+    <rect x="-100" y="120" width="1400" height="220" fill="url(#blueSweep)"></rect>
+  </g>
+  <g transform="rotate(8 960 400)">
+    <rect x="820" y="340" width="1200" height="180" fill="url(#greenSweep)"></rect>
+  </g>
+
+  <!-- Spotlight behind headline (left side where text will sit) -->
+  <ellipse cx="560" cy="460" rx="520" ry="320" fill="url(#glow)"></ellipse>
+
+  <!-- Fine textures (very subtle) -->
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#diag)"></rect>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#grid)"></rect>
+
+  <!-- Accent chevrons (top-right, faint) -->
+  <g opacity=".12" fill="#0a66ff" transform="translate(1480,120)">
+    <path d="M0 0 L80 0 L60 20 L-20 20 Z"></path>
+    <path d="M28 36 L108 36 L88 56 L8 56 Z"></path>
+    <path d="M56 72 L136 72 L116 92 L36 92 Z"></path>
+  </g>
+
+  <!-- Shine bar across middle -->
+  <rect x="0" y="360" width="1920" height="10" fill="url(#shine)"></rect>
+
+  <!-- Soft vignette for edge containment -->
+  <rect width="100%" height="100%" fill="url(#vignette)"></rect>
+
+  <!-- Watermark text (very faint, behind headline zone) -->
+  <text x="80" y="200" font-family="Segoe UI, Roboto, Arial, sans-serif" font-weight="800" font-size="96" fill="#0a66ff" fill-opacity=".06" letter-spacing="2">NSBLPA</text>
+</svg>
